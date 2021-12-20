@@ -1,0 +1,146 @@
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/images/Hero\ area\ image.svg");
+    background-position: center;
+    background-size: cover;
+    padding: 50px 100px;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .icon-coffe {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            img {
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #FF4B32;
+                font-size: 24px;
+                font-weight: bold;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+
+        }
+
+        .header-text {
+            display: flex;
+            gap: 50px;
+
+            a {
+                color: #FFFFFF;
+                opacity: 0.6;
+                font-size: 18px;
+                text-decoration: none;
+                font-family: 'Open Sans', sans-serif;
+
+                &:hover {
+                    color: #FF4B32;
+                }
+
+            }
+
+        }
+
+        .header-icons {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            .header-ellips {
+                width: 50px;
+                height: 50px;
+                opacity: 0.4;
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 50%;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+
+            }
+
+        }
+
+    }
+
+    h1 {
+        font-size: 60px;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        margin-top: 100px;
+    }
+
+    p {
+        font-size: 20px;
+        color: white;
+        opacity: 0.8;
+        margin-top: 30px;
+    }
+
+    button {
+        width: 150px;
+        height: 60px;
+        background: #FF4B32;
+        border-radius: 5px;
+        border: none;
+        margin-top: 50px;
+
+        a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+    }
+
+}
+
+@media (max-width:600px){
+    .section-1 {
+        padding: 20px;
+
+        .icon-coffe {
+            p {
+                display: none;
+            }
+        }
+
+        .header-text {
+            a {
+                display: none;
+            }
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            margin: 50px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 25px;
+            margin: 0;
+        }
+
+        button {
+            text-align: center;
+            position: relative;
+            left: 30%;
+        }
+
+    }
+}
