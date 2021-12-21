@@ -1,0 +1,127 @@
+.section-2 {
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+
+    .section-2-text-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 43px;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .right-left {
+            display: flex;
+            gap: 23px;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            .left {
+                position: relative;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #FF4B32;
+                border-radius: 50%;
+                background: #FF4B32;
+            }
+
+            .right {
+                position: relative;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #FF4B32;
+                border-radius: 50%;
+                background: #FF4B32;
+            }
+
+        }
+
+    }
+
+    .section-2-flexbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .coffe-box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+
+            h2 {
+                font-size: 32px;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+
+            .num-btn {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                p {
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+
+                button {
+                    width: 165px;
+                    height: 55px;
+                    background: #FF4B32;
+                    border-radius: 5px;
+                    border: none;
+                    color: white;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 18px;
+
+                    &:hover {
+                        background-color: white;
+                        border: 1px solid #FF4B32;
+                        color: #FF4B32;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width:600px) {
+    .section-2 {
+        padding: 20px;
+
+        .section-2-text-icon {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        h1 {
+            font-size: 45px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .section-2-flexbox {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+
+    }
+}
