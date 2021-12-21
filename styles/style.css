@@ -398,7 +398,7 @@
 
 @media (max-width: 600px) {
   .section-3 {
-    padding: 20px;
+    padding: 0;
     height: auto;
   }
   .section-3 h1 {
@@ -419,6 +419,168 @@
   }
   .section-3 .grid-contanier div {
     height: 300px;
+  }
+}
+
+.section-4 {
+  width: 100%;
+  height: 100vh;
+  background: #0D0402;
+  position: relative;
+}
+
+.section-4 .right img {
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.section-4 .left img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.section-4 .con-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.section-4 .con-text .p-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.section-4 .con-text .p-line p {
+  color: #FF4B32;
+  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-4 .con-text h1 {
+  font-size: 43px;
+  text-align: center;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.section-4 .con-text .telephone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.section-4 .con-text .telephone a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-4 .con-text .telephone a:hover {
+  color: #353592;
+}
+
+.section-4 .con-text .gmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.section-4 .con-text .gmail a {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-4 .con-text .gmail a:hover {
+  color: #353592;
+}
+
+.section-4 .con-text .Ellips-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-4 .con-text .Ellips-icon .icons {
+  width: 50px;
+  height: 50px;
+  opacity: 0.4;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  position: relative;
+}
+
+.section-4 .con-text .Ellips-icon .icons img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+  .section-4 {
+    padding: 20px;
+    background-image: url("/images/Image (3).svg");
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+  }
+  .section-4 .right img {
+    display: none;
+  }
+  .section-4 .left {
+    display: none;
+  }
+  .section-4 .con-text {
+    gap: 20px;
+  }
+  .section-4 .con-text h1 {
+    font-size: 45px;
+    color: white;
+  }
+  .section-4 .con-text .Ellips-icon .icons {
+    border: 1px solid #6c8eee;
+    opacity: 1;
+    background-color: #24b3cc;
   }
 }
 /*# sourceMappingURL=style.css.map */
