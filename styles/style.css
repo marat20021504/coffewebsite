@@ -299,4 +299,126 @@
     gap: 5px;
   }
 }
+
+.section-3 {
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+}
+
+.section-3 .h1-p {
+  height: 20%;
+}
+
+.section-3 .h1-p h1 {
+  font-size: 43px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+.section-3 .h1-p p {
+  color: #000000;
+  opacity: 0.7;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.section-3 .grid-contanier {
+  height: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (80px)[8];
+      grid-template-rows: repeat(8, 80px);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.section-3 .grid-contanier div {
+  background-position: center;
+  background-size: cover;
+}
+
+.section-3 .grid-contanier div:hover {
+  opacity: 0.8;
+}
+
+.section-3 .grid-contanier .box-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1 / 6;
+  background-image: url("/images/Image (3).svg");
+}
+
+.section-3 .grid-contanier .box-2 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5 / 9;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+  background-image: url("/images/Image (4).svg");
+}
+
+.section-3 .grid-contanier .box-3 {
+  grid-column: 9 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  grid-row: 1 / 6;
+  background-image: url("/images/Image (5).svg");
+}
+
+.section-3 .grid-contanier .box-4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  grid-row: 6 / -1;
+  background-image: url("/images/Image (6).svg");
+}
+
+.section-3 .grid-contanier .box-5 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5 / 9;
+  grid-row: 4 / -1;
+  background-image: url("/images/Image (7).svg");
+}
+
+.section-3 .grid-contanier .box-6 {
+  grid-column: 9 / -1;
+  grid-row: 6 / -1;
+  background-image: url("/images/Imae (1).svg");
+}
+
+@media (max-width: 600px) {
+  .section-3 {
+    padding: 20px;
+    height: auto;
+  }
+  .section-3 h1 {
+    font-size: 45px;
+  }
+  .section-3 p {
+    font-size: 15px;
+  }
+  .section-3 .grid-contanier {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .section-3 .grid-contanier div {
+    height: 300px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
